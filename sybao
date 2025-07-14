@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        for (int frst = 1; frst < 11; frst++) {
+            for (int sec = 1; sec < 11; sec++) {
+                int tab = frst * sec;
+                System.out.println(frst + "*" + sec + "=" + tab);
+            }
+            System.out.println("");
+        }
+        
+    }
+}
