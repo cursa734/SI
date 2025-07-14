@@ -1,0 +1,123 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int score = 0;
+        int totalQuestions = 7; 
+        System.out.println("Викторина!");
+        System.out.println("Ответьте на 7 вопросов, выбрав правильный вариант.\n");
+
+
+        System.out.println("1. С кем у Вкусно и точка будет коллаборация?");
+        System.out.println("a) Putin Team");
+        System.out.println("b) Макдональдс");
+        System.out.println("c) Hello Kitty");
+        System.out.print("Ваш ответ: ");
+        String answer1 = scanner.nextLine();
+        if (answer1.equalsIgnoreCase("c")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - c) Hello Kitty\n");
+        }
+
+       
+        System.out.println("2. Сколько букв в русском алфавите?");
+        System.out.println("a) 27");
+        System.out.println("b) 33");
+        System.out.println("c) 34");
+        System.out.println("d) 29");
+        System.out.print("Ваш ответ: ");
+        String answer2 = scanner.nextLine();
+        if (answer2.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) 33\n");
+        }
+
+        
+        System.out.println("3. Самый популярный магазин видеоигр?");
+        System.out.println("a) Epic games");
+        System.out.println("b) Steam");
+        System.out.println("c) Blizzard");
+        System.out.println("d) Origin");
+        System.out.print("Ваш ответ: ");
+        String answer3 = scanner.nextLine();
+        if (answer3.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) Python\n");
+        }
+
+        System.out.println("4. Популярный рыжий кот Гарфилд впервые появился в..?");
+        System.out.println("a) Фильмах");
+        System.out.println("b) Комиксах");
+        System.out.println("c) Играх");
+        System.out.println("d) Раскрасках");
+        System.out.print("Ваш ответ: ");
+        String answer4 = scanner.nextLine();
+        if (answer4.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) Python\n");
+        }
+
+        System.out.println("5. Кто снимал Опеннгеймера?");
+        System.out.println("a) Данила Козловский");
+        System.out.println("b) Кристофер Нолан");
+        System.out.println("c) Сарик Андреасян");
+        System.out.println("d) Зак Снайдер");
+        System.out.print("Ваш ответ: ");
+        String answer5 = scanner.nextLine();
+        if (answer5.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) Python\n");
+        }
+
+        System.out.println("6. Самый густонаселенный город Польши?");
+        System.out.println("a) Краков");
+        System.out.println("b) Варшава");
+        System.out.println("c) Вроцлав");
+        System.out.println("d) Сталинград");
+        System.out.print("Ваш ответ: ");
+        String answer6 = scanner.nextLine();
+        if (answer6.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) Python\n");
+        }
+
+        System.out.println("7. Это Викторина?");
+        System.out.println("a) нет");
+        System.out.println("b) да");
+        System.out.println("c) нет");
+        System.out.println("d) нет");
+        System.out.print("Ваш ответ: ");
+        String answer7 = scanner.nextLine();
+        if (answer7.equalsIgnoreCase("b")) {
+            score++;
+            System.out.println("Правильно!\n");
+        } else {
+            System.out.println("Неправильно! Правильный ответ - b) Python\n");
+        }
+
+        
+        System.out.println("Викторина завершена!");
+        System.out.println("Ваш результат: " + score + " из 7");
+        
+        if (score == 7) {
+            System.out.println("Отличный результат! Вы знаток!");
+        } else if (score >= 5) {
+            System.out.println("Хороший результат!");
+        } else {
+            System.out.println("Попробуйте еще раз!");
+        }
+    }
+}
