@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Введите первое число:");
+        double num1 = in.nextDouble();  // Можно ввести целое или дробное число
+        
+        System.out.println("Введите второе число:");
+        double num2 = in.nextDouble();
+        
+        // Вычисляем результаты
+        double sum = num1 + num2;       // Сложение
+        double difference = num1 - num2; // Вычитание
+        double product = num1 * num2;    // Умножение
+        double quotient = num1 / num2;   // Деление
+        
+        // Выводим результаты
+        System.out.println("\nРезультаты операций:");
+        System.out.println("Сложение: " + num1 + " + " + num2 + " = " + sum);
+        System.out.println("Вычитание: " + num1 + " - " + num2 + " = " + difference);
+        System.out.println("Умножение: " + num1 + " * " + num2 + " = " + product);
+        System.out.println("Деление: " + num1 + " / " + num2 + " = " + quotient);
+            if (num2 != 0) {
+                System.out.println("Деление: " + num1 + " / " + num2 + " = " + quotient);
+}           else {
+                System.out.println("Деление на ноль невозможно!");
+}
+    }
+}
